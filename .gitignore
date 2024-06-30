@@ -1,0 +1,10 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore Docker volumes
+db_data/
