@@ -5,6 +5,7 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+*.gitignore
 
 # Ignore Docker volumes
 db_data/

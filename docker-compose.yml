@@ -27,10 +27,10 @@ services:
     image: mariadb:latest
     container_name: mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: p4rv1zk44n
-      MYSQL_DATABASE: casa_db
-      MYSQL_USER: mearazor
-      MYSQL_PASSWORD: p4rv1zk44n
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: your_database
+      MYSQL_USER: your_user
+      MYSQL_PASSWORD: your_password
     volumes:
       - db_data:/var/lib/mysql
     networks:
@@ -41,7 +41,7 @@ services:
     container_name: phpmyadmin
     environment:
       PMA_HOST: mariadb
-      MYSQL_ROOT_PASSWORD: p4rv1zk44n
+      MYSQL_ROOT_PASSWORD: your_password
     ports:
       - "8024:80"
     depends_on:
